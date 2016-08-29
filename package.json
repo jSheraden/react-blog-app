@@ -1,13 +1,14 @@
 {
-  "name": "react-survey-app",
+  "name": "react-app",
   "version": "0.0.1",
   "private": true,
   "devDependencies": {
-    "react-scripts": "0.2.3"
+    "react-router": "~0.13",
+    "react-scripts": "0.2.1"
   },
   "dependencies": {
-    "react": "^15.3.1",
-    "react-dom": "^15.3.1"
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1"
   },
   "scripts": {
     "start": "react-scripts start",
