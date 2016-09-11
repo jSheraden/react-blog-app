@@ -2,7 +2,7 @@ var path = require('path');
 
 module.exports = {
   entry: {
-    app: ['./public/javascripts/src/main.js']
+    app: ['./public/javascripts/index.js']
   },
   output: {
     path: path.resolve(__dirname, 'public/javascripts/build'),
@@ -13,8 +13,11 @@ module.exports = {
   module: {
   	loaders: [
   	  {
-        test: path.join(__dirname, 'public/javascripts/src'),
-        loader: 'babel-loader'
+        test: path.join(__dirname, 'public/javascripts'),
+        loader: 'babel-loader',
+        query: {
+          presets: ['es2015', 'react'],
+        }
       }
   	]
   }
